@@ -1,0 +1,8 @@
+/out/
+/.idea/
+/target/
+/*.iml
+/*.txt
+/*.html
+/*.docx
+/*.puml

@@ -1,0 +1,821 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="chrysostom.view.editor.EditorWindow">
+  <grid id="27dc6" binding="contentPanel" layout-manager="GridBagLayout">
+    <constraints>
+      <xy x="20" y="20" width="937" height="650"/>
+    </constraints>
+    <properties>
+      <background color="-3749169"/>
+      <minimumSize width="540" height="360"/>
+      <opaque value="true"/>
+      <preferredSize width="960" height="640"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <toolbar id="132a9">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-1"/>
+          <floatable value="false"/>
+          <margin top="0" left="0" bottom="0" right="0"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="360fd" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <preferredSize width="5" height="0"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="5ceee" class="javax.swing.JButton" binding="newButton">
+            <constraints/>
+            <properties>
+              <actionCommand value=""/>
+              <background color="-1973791"/>
+              <enabled value="true"/>
+              <focusable value="true"/>
+              <hideActionText value="false"/>
+              <icon value="icons/16/new.png"/>
+              <margin top="0" left="0" bottom="0" right="0"/>
+              <maximumSize width="28" height="28"/>
+              <minimumSize width="28" height="28"/>
+              <opaque value="false"/>
+              <preferredSize width="28" height="28"/>
+              <requestFocusEnabled value="false"/>
+              <selected value="false"/>
+              <text value=""/>
+              <toolTipText value="Новый"/>
+              <visible value="true"/>
+            </properties>
+          </component>
+          <component id="f7263" class="javax.swing.JButton" binding="openButton">
+            <constraints/>
+            <properties>
+              <actionCommand value=""/>
+              <background color="-1973791"/>
+              <icon value="icons/16/open.png"/>
+              <maximumSize width="28" height="28"/>
+              <minimumSize width="28" height="28"/>
+              <opaque value="false"/>
+              <preferredSize width="28" height="28"/>
+              <requestFocusEnabled value="false"/>
+              <selected value="false"/>
+              <text value=""/>
+              <toolTipText value="Открыть"/>
+              <visible value="true"/>
+            </properties>
+          </component>
+          <component id="dcc25" class="javax.swing.JButton" binding="saveButton">
+            <constraints/>
+            <properties>
+              <actionCommand value=""/>
+              <background color="-1973791"/>
+              <icon value="icons/16/save.png"/>
+              <maximumSize width="28" height="28"/>
+              <minimumSize width="28" height="28"/>
+              <opaque value="false"/>
+              <preferredSize width="28" height="28"/>
+              <requestFocusEnabled value="false"/>
+              <selected value="false"/>
+              <text value=""/>
+              <toolTipText value="Сохранить"/>
+              <visible value="true"/>
+            </properties>
+          </component>
+          <component id="1de4b" class="javax.swing.JButton" binding="projectsButton">
+            <constraints/>
+            <properties>
+              <actionCommand value=""/>
+              <background color="-1973791"/>
+              <icon value="icons/16/ui-list-box-blue.png"/>
+              <maximumSize width="28" height="28"/>
+              <minimumSize width="28" height="28"/>
+              <opaque value="false"/>
+              <preferredSize width="28" height="28"/>
+              <requestFocusEnabled value="false"/>
+              <selected value="false"/>
+              <text value=""/>
+              <toolTipText value="Проекты"/>
+              <visible value="true"/>
+            </properties>
+          </component>
+          <component id="88a4c" class="javax.swing.JToolBar$Separator">
+            <constraints/>
+            <properties/>
+          </component>
+          <component id="fdda5" class="javax.swing.JButton" binding="cutButton">
+            <constraints/>
+            <properties>
+              <actionCommand value=""/>
+              <background color="-1973791"/>
+              <icon value="icons/16/cut.png"/>
+              <maximumSize width="28" height="28"/>
+              <minimumSize width="28" height="28"/>
+              <opaque value="false"/>
+              <preferredSize width="28" height="28"/>
+              <requestFocusEnabled value="false"/>
+              <selected value="false"/>
+              <text value=""/>
+              <toolTipText value="Вырезать"/>
+              <visible value="true"/>
+            </properties>
+          </component>
+          <component id="bfe70" class="javax.swing.JButton" binding="copyButton">
+            <constraints/>
+            <properties>
+              <actionCommand value=""/>
+              <background color="-1973791"/>
+              <icon value="icons/16/copy.png"/>
+              <maximumSize width="28" height="28"/>
+              <minimumSize width="28" height="28"/>
+              <opaque value="false"/>
+              <preferredSize width="28" height="28"/>
+              <requestFocusEnabled value="false"/>
+              <selected value="false"/>
+              <text value=""/>
+              <toolTipText value="Копировать"/>
+              <visible value="true"/>
+            </properties>
+          </component>
+          <component id="43b79" class="javax.swing.JButton" binding="pasteButton">
+            <constraints/>
+            <properties>
+              <actionCommand value=""/>
+              <background color="-1973791"/>
+              <icon value="icons/16/paste.png"/>
+              <maximumSize width="28" height="28"/>
+              <minimumSize width="28" height="28"/>
+              <opaque value="false"/>
+              <preferredSize width="28" height="28"/>
+              <requestFocusEnabled value="false"/>
+              <selected value="false"/>
+              <text value=""/>
+              <toolTipText value="Вставить"/>
+              <visible value="true"/>
+            </properties>
+          </component>
+          <component id="cf255" class="javax.swing.JToolBar$Separator">
+            <constraints/>
+            <properties/>
+          </component>
+          <component id="505e4" class="javax.swing.JButton" binding="undoButton">
+            <constraints/>
+            <properties>
+              <actionCommand value=""/>
+              <background color="-1973791"/>
+              <enabled value="false"/>
+              <icon value="icons/16/undo_arrow.png"/>
+              <maximumSize width="28" height="28"/>
+              <minimumSize width="28" height="28"/>
+              <opaque value="false"/>
+              <preferredSize width="28" height="28"/>
+              <requestFocusEnabled value="false"/>
+              <selected value="false"/>
+              <text value=""/>
+              <toolTipText value="Отменить"/>
+              <visible value="true"/>
+            </properties>
+          </component>
+          <component id="6ed3d" class="javax.swing.JButton" binding="redoButton">
+            <constraints/>
+            <properties>
+              <actionCommand value=""/>
+              <background color="-1973791"/>
+              <enabled value="false"/>
+              <icon value="icons/16/redo_arrow.png"/>
+              <maximumSize width="28" height="28"/>
+              <minimumSize width="28" height="28"/>
+              <opaque value="false"/>
+              <preferredSize width="28" height="28"/>
+              <requestFocusEnabled value="false"/>
+              <selected value="false"/>
+              <text value=""/>
+              <toolTipText value="Повторить"/>
+              <visible value="true"/>
+            </properties>
+          </component>
+          <component id="1a67b" class="javax.swing.JToolBar$Separator">
+            <constraints/>
+            <properties/>
+          </component>
+          <component id="b7215" class="javax.swing.JButton" binding="searchBtn">
+            <constraints/>
+            <properties>
+              <actionCommand value=""/>
+              <background color="-1973791"/>
+              <icon value="icons/16/search.png"/>
+              <maximumSize width="28" height="28"/>
+              <minimumSize width="28" height="28"/>
+              <opaque value="false"/>
+              <preferredSize width="28" height="28"/>
+              <requestFocusEnabled value="false"/>
+              <selected value="false"/>
+              <text value=""/>
+              <toolTipText value="Найти"/>
+              <visible value="true"/>
+            </properties>
+          </component>
+          <hspacer id="755a6">
+            <constraints/>
+          </hspacer>
+          <component id="54050" class="javax.swing.JButton" binding="infoButton">
+            <constraints/>
+            <properties>
+              <actionCommand value=""/>
+              <background color="-1973791"/>
+              <icon value="icons/16/info.png"/>
+              <maximumSize width="28" height="28"/>
+              <minimumSize width="28" height="28"/>
+              <opaque value="false"/>
+              <preferredSize width="28" height="28"/>
+              <requestFocusEnabled value="false"/>
+              <selected value="false"/>
+              <text value=""/>
+              <toolTipText value="О программе"/>
+              <visible value="true"/>
+            </properties>
+          </component>
+          <component id="ffab6" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <preferredSize width="2" height="0"/>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </toolbar>
+      <component id="180c0" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-6841957"/>
+          <foreground color="-6841957"/>
+          <preferredSize width="0" height="1"/>
+        </properties>
+      </component>
+      <grid id="2f633" layout-manager="GridBagLayout">
+        <constraints>
+          <grid row="6" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="1.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <alignmentX value="0.0"/>
+          <alignmentY value="0.0"/>
+          <background color="-986896"/>
+          <minimumSize width="205" height="20"/>
+          <preferredSize width="205" height="20"/>
+        </properties>
+        <border type="none">
+          <color color="-6841957"/>
+        </border>
+        <children>
+          <component id="5fc68" class="javax.swing.JLabel" binding="wordsQuantityLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag top="0" left="10" bottom="0" right="0" weightx="0.0" weighty="0.0" ipadx="20"/>
+            </constraints>
+            <properties>
+              <enabled value="true"/>
+              <font swing-font="Label.font"/>
+              <text value="Слов: 0"/>
+              <toolTipText value="Число слов"/>
+              <verticalAlignment value="0"/>
+              <verticalTextPosition value="0"/>
+            </properties>
+          </component>
+          <component id="90b66" class="javax.swing.JLabel" binding="charsQuantityLabel">
+            <constraints>
+              <grid row="0" column="2" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag top="0" left="10" bottom="0" right="0" weightx="1.0" weighty="0.0" ipadx="25"/>
+            </constraints>
+            <properties>
+              <enabled value="true"/>
+              <font swing-font="Label.font"/>
+              <text value="Символов: 0"/>
+              <toolTipText value="Число символов"/>
+              <verticalAlignment value="0"/>
+              <verticalTextPosition value="0"/>
+            </properties>
+          </component>
+          <component id="e23b3" class="javax.swing.JSeparator">
+            <constraints>
+              <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <foreground color="-6841957"/>
+              <orientation value="1"/>
+              <preferredSize width="1" height="20"/>
+            </properties>
+          </component>
+          <component id="7afa4" class="javax.swing.JLabel" binding="readyLabel">
+            <constraints>
+              <grid row="0" column="3" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="0" fill="1" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <maximumSize width="20" height="20"/>
+              <minimumSize width="20" height="20"/>
+              <preferredSize width="20" height="20"/>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+      <component id="9af3" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-6841957"/>
+          <foreground color="-3618616"/>
+          <inheritsPopupMenu value="false"/>
+          <preferredSize width="0" height="1"/>
+        </properties>
+      </component>
+      <component id="4a42c" class="javax.swing.JSeparator">
+        <constraints>
+          <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="6" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-3618616"/>
+          <foreground color="-3618616"/>
+          <preferredSize width="0" height="1"/>
+        </properties>
+      </component>
+      <toolbar id="54ea6">
+        <constraints>
+          <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="1" indent="0" use-parent-layout="false">
+            <preferred-size width="-1" height="20"/>
+          </grid>
+          <gridbag weightx="1.0" weighty="0.0"/>
+        </constraints>
+        <properties>
+          <background color="-986896"/>
+          <floatable value="false"/>
+          <maximumSize width="33423" height="50"/>
+          <minimumSize width="140" height="50"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="175ca" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <preferredSize width="5" height="0"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="cf9f4" class="javax.swing.JToggleButton" binding="anaphoraButton">
+            <constraints/>
+            <properties>
+              <actionCommand value="anaphora"/>
+              <background color="-1973791"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <icon value="icons/16/book.png"/>
+              <iconTextGap value="2"/>
+              <maximumSize width="64" height="46"/>
+              <minimumSize width="64" height="46"/>
+              <opaque value="false"/>
+              <preferredSize width="64" height="46"/>
+              <requestFocusEnabled value="false"/>
+              <selected value="false"/>
+              <text value="Анафоры"/>
+              <toolTipText value="Анафоры"/>
+              <verticalAlignment value="0"/>
+              <verticalTextPosition value="3"/>
+              <visible value="true"/>
+            </properties>
+          </component>
+          <component id="adf69" class="javax.swing.JButton" binding="createButton">
+            <constraints/>
+            <properties>
+              <actionCommand value="add"/>
+              <background color="-1973791"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <icon value="icons/16/create.png"/>
+              <iconTextGap value="2"/>
+              <maximumSize width="102" height="46"/>
+              <minimumSize width="102" height="46"/>
+              <opaque value="false"/>
+              <preferredSize width="102" height="46"/>
+              <requestFocusEnabled value="false"/>
+              <selected value="false"/>
+              <text value="Создать анафору"/>
+              <toolTipText value="Создать анафору"/>
+              <verticalAlignment value="0"/>
+              <verticalTextPosition value="3"/>
+              <visible value="true"/>
+            </properties>
+          </component>
+          <component id="5540f" class="javax.swing.JButton" binding="appendButton">
+            <constraints/>
+            <properties>
+              <actionCommand value=""/>
+              <background color="-1973791"/>
+              <enabled value="false"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <icon value="icons/16/append.png"/>
+              <iconTextGap value="2"/>
+              <maximumSize width="110" height="46"/>
+              <minimumSize width="110" height="46"/>
+              <opaque value="false"/>
+              <preferredSize width="110" height="46"/>
+              <requestFocusEnabled value="false"/>
+              <selected value="false"/>
+              <text value="Добавить вариант"/>
+              <toolTipText value="Добавить вариант"/>
+              <verticalAlignment value="0"/>
+              <verticalTextPosition value="3"/>
+              <visible value="true"/>
+            </properties>
+          </component>
+          <component id="99a5" class="javax.swing.JToolBar$Separator">
+            <constraints/>
+            <properties>
+              <separatorSize width="10" height="50"/>
+            </properties>
+          </component>
+          <component id="ade76" class="javax.swing.JButton" binding="searchButton">
+            <constraints/>
+            <properties>
+              <actionCommand value="search"/>
+              <background color="-1973791"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <icon value="icons/16/duplicates.png"/>
+              <iconTextGap value="2"/>
+              <maximumSize width="100" height="46"/>
+              <minimumSize width="100" height="46"/>
+              <opaque value="false"/>
+              <preferredSize width="100" height="46"/>
+              <requestFocusEnabled value="false"/>
+              <selected value="false"/>
+              <text value="Поиск повторов"/>
+              <toolTipText value="Поиск повторов"/>
+              <verticalAlignment value="0"/>
+              <verticalTextPosition value="3"/>
+              <visible value="true"/>
+            </properties>
+          </component>
+          <component id="beb9f" class="javax.swing.JButton" binding="chartButton">
+            <constraints/>
+            <properties>
+              <actionCommand value="chart"/>
+              <background color="-1973791"/>
+              <horizontalAlignment value="0"/>
+              <horizontalTextPosition value="0"/>
+              <icon value="icons/16/graph.png"/>
+              <iconTextGap value="2"/>
+              <maximumSize width="50" height="46"/>
+              <minimumSize width="50" height="46"/>
+              <opaque value="false"/>
+              <preferredSize width="50" height="46"/>
+              <requestFocusEnabled value="false"/>
+              <selected value="false"/>
+              <text value="График"/>
+              <toolTipText value="График"/>
+              <verticalAlignment value="0"/>
+              <verticalTextPosition value="3"/>
+              <visible value="true"/>
+            </properties>
+          </component>
+          <hspacer id="bfa54">
+            <constraints/>
+          </hspacer>
+          <component id="ddec3" class="javax.swing.JComboBox" binding="fontNameList">
+            <constraints/>
+            <properties>
+              <autoscrolls value="false"/>
+              <background color="-1"/>
+              <editable value="true"/>
+              <focusable value="true"/>
+              <foreground color="-16777216"/>
+              <maximumRowCount value="12"/>
+              <maximumSize width="170" height="20"/>
+              <minimumSize width="93" height="20"/>
+              <opaque value="true"/>
+              <preferredSize width="170" height="20"/>
+            </properties>
+          </component>
+          <component id="6fead" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <preferredSize width="2" height="0"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="b658f" class="javax.swing.JComboBox" binding="fontSizeList">
+            <constraints/>
+            <properties>
+              <background color="-1"/>
+              <editable value="true"/>
+              <foreground color="-16777216"/>
+              <lightWeightPopupEnabled value="true"/>
+              <maximumRowCount value="12"/>
+              <maximumSize width="50" height="20"/>
+              <minimumSize width="50" height="20"/>
+              <preferredSize width="50" height="20"/>
+            </properties>
+          </component>
+          <component id="fd700" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <preferredSize width="10" height="0"/>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </toolbar>
+      <splitpane id="f478d" binding="splitPane">
+        <constraints>
+          <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag weightx="0.0" weighty="1.0"/>
+        </constraints>
+        <properties>
+          <continuousLayout value="true"/>
+          <dividerSize value="2"/>
+        </properties>
+        <border type="empty"/>
+        <children>
+          <grid id="55827" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <splitpane position="left"/>
+            </constraints>
+            <properties>
+              <minimumSize width="195" height="186"/>
+              <preferredSize width="210" height="186"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <toolbar id="b475e">
+                <constraints border-constraint="North"/>
+                <properties>
+                  <floatable value="false"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="a82cd" class="javax.swing.JButton" binding="createAnaphoraButton">
+                    <constraints/>
+                    <properties>
+                      <actionCommand value=""/>
+                      <icon value="icons/16/plus-button.png"/>
+                      <label value=""/>
+                      <maximumSize width="28" height="28"/>
+                      <minimumSize width="28" height="28"/>
+                      <preferredSize width="28" height="28"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="29688" class="javax.swing.JButton" binding="editButton">
+                    <constraints/>
+                    <properties>
+                      <enabled value="false"/>
+                      <icon value="icons/16/pencil-button.png"/>
+                      <label value=""/>
+                      <maximumSize width="28" height="28"/>
+                      <minimumSize width="28" height="28"/>
+                      <preferredSize width="28" height="28"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="7b131" class="javax.swing.JButton" binding="deleteButton">
+                    <constraints/>
+                    <properties>
+                      <enabled value="false"/>
+                      <icon value="icons/16/minus-button.png"/>
+                      <label value=""/>
+                      <maximumSize width="28" height="28"/>
+                      <minimumSize width="28" height="28"/>
+                      <preferredSize width="28" height="28"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="81289" class="javax.swing.JButton" binding="propertiesButton">
+                    <constraints/>
+                    <properties>
+                      <actionCommand value=""/>
+                      <enabled value="false"/>
+                      <icon value="icons/16/information-button.png"/>
+                      <label value=""/>
+                      <maximumSize width="28" height="28"/>
+                      <minimumSize width="28" height="28"/>
+                      <preferredSize width="28" height="28"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <component id="2c021" class="javax.swing.JToolBar$Separator">
+                    <constraints/>
+                    <properties/>
+                  </component>
+                  <component id="a09b2" class="javax.swing.JButton" binding="clearAnaphoraDictButton">
+                    <constraints/>
+                    <properties>
+                      <actionCommand value=""/>
+                      <enabled value="true"/>
+                      <icon value="icons/16/broom.png"/>
+                      <label value=""/>
+                      <maximumSize width="28" height="28"/>
+                      <minimumSize width="28" height="28"/>
+                      <preferredSize width="28" height="28"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                  <hspacer id="af8cd">
+                    <constraints/>
+                  </hspacer>
+                  <component id="61a80" class="javax.swing.JButton" binding="closeAnaphoraBrowserButton">
+                    <constraints/>
+                    <properties>
+                      <actionCommand value=""/>
+                      <enabled value="true"/>
+                      <icon value="icons/16/cross.png"/>
+                      <label value=""/>
+                      <maximumSize width="28" height="28"/>
+                      <minimumSize width="28" height="28"/>
+                      <preferredSize width="28" height="28"/>
+                      <text value=""/>
+                    </properties>
+                  </component>
+                </children>
+              </toolbar>
+              <grid id="3501e" layout-manager="BorderLayout" hgap="0" vgap="0">
+                <constraints border-constraint="Center"/>
+                <properties/>
+                <border type="empty">
+                  <size top="0" left="8" bottom="8" right="8"/>
+                </border>
+                <children>
+                  <scrollpane id="11fda" binding="anaphoraScrollPanel">
+                    <constraints border-constraint="Center"/>
+                    <properties>
+                      <minimumSize width="150" height="150"/>
+                      <preferredSize width="150" height="150"/>
+                    </properties>
+                    <border type="none"/>
+                    <children/>
+                  </scrollpane>
+                </children>
+              </grid>
+            </children>
+          </grid>
+          <grid id="efd40" layout-manager="BorderLayout" hgap="0" vgap="0">
+            <constraints>
+              <splitpane position="right"/>
+            </constraints>
+            <properties/>
+            <border type="none"/>
+            <children>
+              <splitpane id="3e580" binding="verticalSplitPane">
+                <constraints border-constraint="Center"/>
+                <properties>
+                  <continuousLayout value="true"/>
+                  <dividerSize value="2"/>
+                  <orientation value="0"/>
+                  <resizeWeight value="1.0"/>
+                </properties>
+                <border type="empty"/>
+                <children>
+                  <scrollpane id="d21c7" binding="primaryScrollPane">
+                    <constraints>
+                      <splitpane position="left"/>
+                    </constraints>
+                    <properties>
+                      <background color="-1"/>
+                      <opaque value="false"/>
+                    </properties>
+                    <border type="empty">
+                      <color color="-8355712"/>
+                    </border>
+                    <children/>
+                  </scrollpane>
+                  <grid id="3e98a" layout-manager="BorderLayout" hgap="0" vgap="0">
+                    <constraints>
+                      <splitpane position="right"/>
+                    </constraints>
+                    <properties/>
+                    <border type="none"/>
+                    <children>
+                      <splitpane id="891a5">
+                        <constraints border-constraint="Center"/>
+                        <properties>
+                          <continuousLayout value="true"/>
+                          <dividerSize value="5"/>
+                          <orientation value="1"/>
+                          <resizeWeight value="1.0"/>
+                        </properties>
+                        <border type="empty">
+                          <color color="-4473925"/>
+                        </border>
+                        <children>
+                          <grid id="4382e" binding="rightPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+                            <constraints>
+                              <splitpane position="right"/>
+                            </constraints>
+                            <properties/>
+                            <border type="none"/>
+                            <children/>
+                          </grid>
+                          <grid id="4bb82" layout-manager="BorderLayout" hgap="0" vgap="0">
+                            <constraints>
+                              <splitpane position="left"/>
+                            </constraints>
+                            <properties/>
+                            <border type="none"/>
+                            <children>
+                              <scrollpane id="9cb4f" binding="secondaryScrollPane">
+                                <constraints border-constraint="Center"/>
+                                <properties>
+                                  <background color="-1"/>
+                                  <opaque value="false"/>
+                                </properties>
+                                <border type="empty">
+                                  <color color="-8355712"/>
+                                </border>
+                                <children/>
+                              </scrollpane>
+                            </children>
+                          </grid>
+                        </children>
+                      </splitpane>
+                      <toolbar id="a4a35" binding="searchPanelDividerToolbar">
+                        <constraints border-constraint="North"/>
+                        <properties>
+                          <floatable value="false"/>
+                        </properties>
+                        <border type="none"/>
+                        <children>
+                          <component id="8b21a" class="javax.swing.JButton" binding="createAnaphoraFromSearchSelectionButton">
+                            <constraints/>
+                            <properties>
+                              <actionCommand value=""/>
+                              <icon value="icons/16/plus-button.png"/>
+                              <label value=""/>
+                              <maximumSize width="28" height="28"/>
+                              <minimumSize width="28" height="28"/>
+                              <preferredSize width="28" height="28"/>
+                              <text value=""/>
+                            </properties>
+                          </component>
+                          <hspacer id="a8cb4">
+                            <constraints/>
+                          </hspacer>
+                          <component id="f754" class="javax.swing.JButton" binding="hideSearchPanelButton">
+                            <constraints/>
+                            <properties>
+                              <actionCommand value=""/>
+                              <enabled value="true"/>
+                              <icon value="icons/16/cross.png"/>
+                              <label value=""/>
+                              <maximumSize width="28" height="28"/>
+                              <minimumSize width="28" height="28"/>
+                              <preferredSize width="28" height="28"/>
+                              <text value=""/>
+                            </properties>
+                          </component>
+                        </children>
+                      </toolbar>
+                    </children>
+                  </grid>
+                </children>
+              </splitpane>
+              <toolbar id="3dfeb" binding="searchButtonToolBar">
+                <constraints border-constraint="South"/>
+                <properties>
+                  <floatable value="false"/>
+                  <margin top="5" left="0" bottom="0" right="0"/>
+                </properties>
+                <border type="none"/>
+                <children>
+                  <component id="56478" class="javax.swing.JToggleButton" binding="searchDuplicatesButton">
+                    <constraints/>
+                    <properties>
+                      <horizontalTextPosition value="11"/>
+                      <icon value="icons/16/search.png"/>
+                      <selected value="false"/>
+                      <text value="Поиск повторов"/>
+                    </properties>
+                  </component>
+                </children>
+              </toolbar>
+            </children>
+          </grid>
+        </children>
+      </splitpane>
+    </children>
+  </grid>
+  <inspectionSuppressions>
+    <suppress inspection="I18nForm" id="9af0d"/>
+    <suppress inspection="I18nForm" id="58b0a"/>
+  </inspectionSuppressions>
+</form>

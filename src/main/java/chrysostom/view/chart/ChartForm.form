@@ -1,0 +1,136 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="chrysostom.view.chart.ChartForm">
+  <grid id="27dc6" binding="contentPanel" layout-manager="BorderLayout" hgap="0" vgap="0">
+    <constraints>
+      <xy x="13" y="14" width="772" height="440"/>
+    </constraints>
+    <properties>
+      <minimumSize width="580" height="360"/>
+      <preferredSize width="600" height="420"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <toolbar id="902a3">
+        <constraints border-constraint="North"/>
+        <properties>
+          <borderPainted value="true"/>
+          <floatable value="false"/>
+          <preferredSize width="495" height="38"/>
+          <visible value="true"/>
+        </properties>
+        <border type="none"/>
+        <children>
+          <component id="c9333" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <maximumSize width="10" height="0"/>
+              <minimumSize width="10" height="10"/>
+              <preferredSize width="10" height="10"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="f776d" class="javax.swing.JButton" binding="saveButton">
+            <constraints/>
+            <properties>
+              <focusPainted value="false"/>
+              <hideActionText value="false"/>
+              <horizontalTextPosition value="11"/>
+              <icon value="icons/16/save.png"/>
+              <margin top="2" left="4" bottom="2" right="4"/>
+              <opaque value="true"/>
+              <text value="Сохранить"/>
+            </properties>
+          </component>
+          <component id="d3833" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <maximumSize width="2" height="0"/>
+              <minimumSize width="2" height="10"/>
+              <preferredSize width="2" height="10"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="79d9f" class="javax.swing.JButton" binding="copyButton">
+            <constraints/>
+            <properties>
+              <focusPainted value="false"/>
+              <hideActionText value="false"/>
+              <horizontalTextPosition value="11"/>
+              <icon value="icons/16/copy.png"/>
+              <margin top="2" left="4" bottom="2" right="4"/>
+              <opaque value="true"/>
+              <text value="Копировать"/>
+            </properties>
+          </component>
+          <component id="884c2" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <maximumSize width="2" height="0"/>
+              <minimumSize width="2" height="10"/>
+              <preferredSize width="2" height="10"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="fcc66" class="javax.swing.JButton" binding="settingsButton">
+            <constraints/>
+            <properties>
+              <focusPainted value="false"/>
+              <hideActionText value="false"/>
+              <horizontalTextPosition value="11"/>
+              <icon value="icons/16/settings.png"/>
+              <margin top="2" left="4" bottom="2" right="4"/>
+              <opaque value="true"/>
+              <text value="Параметры"/>
+            </properties>
+          </component>
+          <component id="69d60" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <maximumSize width="2" height="0"/>
+              <minimumSize width="2" height="10"/>
+              <preferredSize width="2" height="10"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="bd6f0" class="javax.swing.JButton" binding="dataButton">
+            <constraints/>
+            <properties>
+              <focusPainted value="false"/>
+              <hideActionText value="false"/>
+              <horizontalTextPosition value="11"/>
+              <icon value="icons/16/data.png"/>
+              <margin top="2" left="4" bottom="2" right="4"/>
+              <opaque value="true"/>
+              <text value="Выбрать данные"/>
+            </properties>
+          </component>
+          <component id="6a106" class="javax.swing.JLabel">
+            <constraints/>
+            <properties>
+              <maximumSize width="10" height="0"/>
+              <minimumSize width="10" height="10"/>
+              <preferredSize width="10" height="10"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="60d86" class="javax.swing.JLabel" binding="imageSavedLabel">
+            <constraints/>
+            <properties>
+              <foreground color="-10461088"/>
+              <text value="&lt;html&gt;Изображение скопировано&lt;br&gt;в буфер обмена&lt;/html&gt;"/>
+              <visible value="false"/>
+            </properties>
+          </component>
+        </children>
+      </toolbar>
+      <grid id="cd21c" binding="chartWrapper" layout-manager="BorderLayout" hgap="0" vgap="0">
+        <constraints border-constraint="Center"/>
+        <properties/>
+        <border type="empty">
+          <size top="0" left="10" bottom="10" right="10"/>
+        </border>
+        <children/>
+      </grid>
+    </children>
+  </grid>
+</form>

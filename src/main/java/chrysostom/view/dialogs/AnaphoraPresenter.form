@@ -1,0 +1,192 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<form xmlns="http://www.intellij.com/uidesigner/form/" version="1" bind-to-class="chrysostom.view.dialogs.AnaphoraPresenter">
+  <grid id="27dc6" binding="contentPane" layout-manager="GridBagLayout">
+    <constraints>
+      <xy x="20" y="20" width="556" height="435"/>
+    </constraints>
+    <properties>
+      <background color="-986896"/>
+      <minimumSize width="420" height="320"/>
+      <preferredSize width="480" height="360"/>
+    </properties>
+    <border type="none"/>
+    <children>
+      <grid id="88e7" layout-manager="GridBagLayout">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+          <gridbag top="10" left="10" bottom="10" right="10" weightx="1.0" weighty="1.0"/>
+        </constraints>
+        <properties>
+          <opaque value="false"/>
+        </properties>
+        <border type="empty"/>
+        <children>
+          <component id="19511" class="javax.swing.JTextField" binding="nameTextField">
+            <constraints>
+              <grid row="1" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="1.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <background color="-1"/>
+              <margin top="2" left="6" bottom="2" right="6"/>
+              <minimumSize width="64" height="25"/>
+              <preferredSize width="64" height="25"/>
+              <text value=""/>
+            </properties>
+          </component>
+          <component id="29399" class="javax.swing.JTextField" binding="descriptionTextField">
+            <constraints>
+              <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="6" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="1.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <background color="-1"/>
+              <font swing-font="TextField.font"/>
+              <margin top="2" left="6" bottom="2" right="6"/>
+              <minimumSize width="64" height="25"/>
+              <preferredSize width="0" height="25"/>
+            </properties>
+          </component>
+          <component id="9a40f" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag top="0" left="0" bottom="2" right="0" weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <labelFor value="19511"/>
+              <text value="Название:"/>
+            </properties>
+          </component>
+          <component id="575ad" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="2" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag top="10" left="0" bottom="2" right="0" weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <labelFor value="29399"/>
+              <text value="Описание:"/>
+            </properties>
+          </component>
+          <component id="80686" class="javax.swing.JLabel">
+            <constraints>
+              <grid row="5" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="0" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag top="10" left="0" bottom="2" right="0" weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <text value="Варианты:"/>
+            </properties>
+          </component>
+          <component id="dae58" class="javax.swing.JButton" binding="colorButton">
+            <constraints>
+              <grid row="1" column="1" row-span="3" col-span="1" vsize-policy="0" hsize-policy="3" anchor="1" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag top="0" left="10" bottom="0" right="0" weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <iconTextGap value="2"/>
+              <minimumSize width="54" height="68"/>
+              <preferredSize width="54" height="68"/>
+              <requestFocusEnabled value="false"/>
+              <text value="Цвет"/>
+              <verticalAlignment value="0"/>
+              <verticalTextPosition value="3"/>
+            </properties>
+          </component>
+          <grid id="93a8e" layout-manager="GridBagLayout">
+            <constraints>
+              <grid row="7" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <opaque value="false"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <component id="dfaa4" class="javax.swing.JButton" binding="okButton">
+                <constraints>
+                  <grid row="0" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="6" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag weightx="1.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <enabled value="false"/>
+                  <minimumSize width="78" height="25"/>
+                  <opaque value="true"/>
+                  <preferredSize width="78" height="25"/>
+                  <text value="ОК"/>
+                </properties>
+              </component>
+              <component id="55802" class="javax.swing.JButton" binding="cancelButton">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="6" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag top="0" left="10" bottom="0" right="0" weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <minimumSize width="78" height="25"/>
+                  <preferredSize width="78" height="25"/>
+                  <text value="Отмена"/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <grid id="3e7a8" layout-manager="GridBagLayout">
+            <constraints>
+              <grid row="6" column="0" row-span="1" col-span="2" vsize-policy="3" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+              <gridbag weightx="0.0" weighty="1.0"/>
+            </constraints>
+            <properties>
+              <opaque value="false"/>
+            </properties>
+            <border type="none"/>
+            <children>
+              <scrollpane id="2d10" binding="scrollPanel">
+                <constraints>
+                  <grid row="0" column="0" row-span="2" col-span="1" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+                  <gridbag top="0" left="0" bottom="10" right="0" weightx="1.0" weighty="1.0"/>
+                </constraints>
+                <properties/>
+                <border type="line">
+                  <color color="-4868167"/>
+                </border>
+                <children/>
+              </scrollpane>
+              <component id="d8627" class="javax.swing.JButton" binding="deleteButton">
+                <constraints>
+                  <grid row="1" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="5" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag top="0" left="10" bottom="0" right="0" weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <icon value="icons/16/delete.png"/>
+                  <maximumSize width="26" height="26"/>
+                  <minimumSize width="26" height="26"/>
+                  <preferredSize width="26" height="26"/>
+                  <text value=""/>
+                </properties>
+              </component>
+              <component id="93046" class="javax.swing.JButton" binding="addButton">
+                <constraints>
+                  <grid row="0" column="1" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="5" fill="0" indent="0" use-parent-layout="false"/>
+                  <gridbag top="0" left="10" bottom="5" right="0" weightx="0.0" weighty="0.0"/>
+                </constraints>
+                <properties>
+                  <icon value="icons/16/add.png"/>
+                  <maximumSize width="26" height="26"/>
+                  <minimumSize width="26" height="26"/>
+                  <preferredSize width="26" height="26"/>
+                  <text value=""/>
+                </properties>
+              </component>
+            </children>
+          </grid>
+          <component id="96a58" class="javax.swing.JCheckBox" binding="wordsOnlyCheckBox">
+            <constraints>
+              <grid row="4" column="0" row-span="1" col-span="1" vsize-policy="0" hsize-policy="3" anchor="8" fill="0" indent="0" use-parent-layout="false"/>
+              <gridbag top="10" left="0" bottom="0" right="0" weightx="0.0" weighty="0.0"/>
+            </constraints>
+            <properties>
+              <text value="Слово / фраза"/>
+            </properties>
+          </component>
+        </children>
+      </grid>
+    </children>
+  </grid>
+</form>
