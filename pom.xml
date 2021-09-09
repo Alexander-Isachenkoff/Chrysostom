@@ -24,6 +24,30 @@
 
     <dependencies>
         <dependency>
+            <groupId>dialog</groupId>
+            <artifactId>ChooseDataDialog</artifactId>
+            <version>1</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/ChooseDataDialog.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>dialog</groupId>
+            <artifactId>ColorDialog</artifactId>
+            <version>1</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/ColorDialog.jar</systemPath>
+        </dependency>
+
+        <dependency>
+            <groupId>search</groupId>
+            <artifactId>SearchDialog</artifactId>
+            <version>1</version>
+            <scope>system</scope>
+            <systemPath>${project.basedir}/lib/SearchDialog.jar</systemPath>
+        </dependency>
+
+        <dependency>
             <groupId>org.apache.poi</groupId>
             <artifactId>poi-ooxml</artifactId>
             <version>3.11</version>

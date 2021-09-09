@@ -173,11 +173,21 @@ abstract class AnaphoraPresenter extends JDialog
         boolean innerWordsExcluded = wordsOnlyCheckBox.isSelected();
         String[] stringVariants = variantsList.getElements();
         List<Variant> variants = new ArrayList<>();
+        
+        Anaphora anaphora = new Anaphora();
+        
         for (String stringVariant : stringVariants) {
             Variant variant = new Variant(stringVariant);
 	        variants.add(variant);
+	        variant.setAnaphora(anaphora);
         }
-        return new Anaphora(name, description, variants, Colors.toHex(selectedColor), innerWordsExcluded,
-                null);
+        
+        anaphora.setName(name);
+        anaphora.setDescription(description);
+        anaphora.setVariants(variants);
+        anaphora.setHexColor(Colors.toHex(selectedColor));
+        anaphora.setInnerWordsExcluded(innerWordsExcluded);
+        
+        return anaphora;
     }
 }

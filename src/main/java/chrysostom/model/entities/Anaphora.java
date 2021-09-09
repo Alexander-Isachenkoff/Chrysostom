@@ -108,4 +108,8 @@ public class Anaphora implements Serializable
 	public Color getVariantsColor() {
 		return getColor().brighter();
 	}
+	
+	public void setInnerWordsExcluded(boolean innerWordsExcluded) {
+		this.innerWordsExcluded = innerWordsExcluded;
+	}
 }

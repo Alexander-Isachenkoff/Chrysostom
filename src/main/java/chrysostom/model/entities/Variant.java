@@ -36,4 +36,12 @@ public class Variant implements Serializable
     public void setText(String text) {
         this.text = text;
     }
+    
+    public void setAnaphora(Anaphora anaphora) {
+        this.anaphora = anaphora;
+    }
+    
+    public Anaphora getAnaphora() {
+        return anaphora;
+    }
 }

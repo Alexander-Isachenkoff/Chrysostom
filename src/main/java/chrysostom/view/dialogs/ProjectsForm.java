@@ -121,7 +121,7 @@ public class ProjectsForm extends JDialog
                     if (nameExists(name)) {
                         showErrorMessage("Проект с названием \"" + name + "\" уже существует");
                     } else {
-                        projectDAO.save(new Project(name, ""));
+                        projectDAO.save(project);
                         updateProjectsList();
                     }
                 },

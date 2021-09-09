@@ -5,7 +5,9 @@ import chrysostom.io.ProjectLoader;
 import chrysostom.model.AnaphoraDictionary;
 import chrysostom.model.Text;
 import chrysostom.model.WordReport;
+import chrysostom.model.access.AnaphoraDAO;
 import chrysostom.model.access.ProjectDAO;
+import chrysostom.model.access.VariantDAO;
 import chrysostom.model.chart.ChartFactory;
 import chrysostom.model.entities.Anaphora;
 import chrysostom.model.entities.Project;
@@ -330,8 +332,8 @@ public class EditorWindow extends JFrame
         
         // TODO: Функция добавления варианта
         appendButton.addActionListener(e -> {
-            String variant = textPane.getSelectedText();
-            if (variant == null) {
+            String variantText = textPane.getSelectedText();
+            if (variantText == null) {
                 return;
             }
             SelectionDialog<Anaphora> dialog = new SelectionDialog<>();
@@ -340,11 +342,13 @@ public class EditorWindow extends JFrame
             dialog.setItems(dictionary.getAllAnaphora());
             dialog.setTitle("Добавление варианта");
             dialog.setMessage(String.format(
-                    "<html>Добавить вариант <b>\"%s\"</b> к анафоре...</html>", variant));
+                    "<html>Добавить вариант <b>\"%s\"</b> к анафоре...</html>", variantText));
             dialog.showDialog(this);
             Anaphora anaphora = dialog.getSelectedItem();
             if (anaphora != null) {
-                anaphora.getVariants().add(new Variant(variant));
+                Variant variant = new Variant(variantText);
+                variant.setAnaphora(anaphora);
+                anaphora.getVariants().add(variant);
                 textPane.updateHighlighting(null);
             }
         });
@@ -512,6 +516,12 @@ public class EditorWindow extends JFrame
     private void saveProject() {
         updateProject();
         new ProjectDAO().saveOrUpdate(project);
+        for (Anaphora anaphora : project.getAnaphoraList()) {
+            new AnaphoraDAO().saveOrUpdate(anaphora);
+            for (Variant variant : anaphora.getVariants()) {
+                new VariantDAO().saveOrUpdate(variant);
+            }
+        }
     }
     
     private void updateProject() {
